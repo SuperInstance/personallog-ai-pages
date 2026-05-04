@@ -3,38 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personallog.ai — Fleet Agent</title>
+    <title>Personallog.ai — Personal Tracking</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: system-ui, sans-serif; background: #0a1628; color: #e2e8f0; min-height: 100vh; }
+        body { font-family: system-ui, sans-serif; background: #1a0a14; color: #e2e8f0; min-height: 100vh; }
         .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        header { text-align: center; padding: 3rem 0; border-bottom: 2px solid #1e3a5f; }
-        h1 { font-size: 2.5rem; color: #Personal tracking:f472b6; margin-bottom: 0.5rem; }
+        header { text-align: center; padding: 3rem 0; border-bottom: 2px solid #3a1a2a; }
+        h1 { font-size: 2.5rem; color: #f472b6; margin-bottom: 0.5rem; }
         .subtitle { color: #94a3b8; font-size: 1.1rem; }
-        .fleet-badge { display: inline-block; background: #1e3a5f; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; color: #Personal tracking:f472b6; margin-top: 1rem; }
+        .fleet-badge { display: inline-block; background: #3a1a2a; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; color: #f472b6; margin-top: 1rem; }
         .status-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0; }
-        .status-card { background: #0f2744; border: 1px solid #1e4d7b; border-radius: 12px; padding: 1.5rem; }
-        .status-card h3 { color: #Personal tracking:f472b6; font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .status-card { background: #2a1428; border: 1px solid #4a2a3a; border-radius: 12px; padding: 1.5rem; }
+        .status-card h3 { color: #f472b6; font-size: 0.9rem; margin-bottom: 0.5rem; }
         .status-card .value { font-size: 1.5rem; font-weight: bold; color: #fff; }
         .status-card .sub { font-size: 0.75rem; color: #64748b; }
-        .plato-status { background: #1a2744; border: 1px solid #2d4a6f; border-radius: 8px; padding: 1rem; margin: 2rem 0; text-align: center; }
+        .features { margin: 2rem 0; }
+        .features h2 { color: #f472b6; margin-bottom: 1rem; }
+        .feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .feature { background: #2a1428; border-radius: 8px; padding: 1rem; }
+        .feature h4 { color: #fff; margin-bottom: 0.3rem; }
+        .feature p { color: #94a3b8; font-size: 0.85rem; }
+        .plato-status { background: #2a1428; border: 1px solid #4a2a3a; border-radius: 8px; padding: 1rem; margin: 2rem 0; text-align: center; }
         .plato-status .label { font-size: 0.75rem; color: #64748b; }
         .plato-status .value { color: #22c55e; font-size: 1.1rem; font-weight: bold; }
-        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.8rem; border-top: 1px solid #1e3a5f; margin-top: 2rem; }
-        a { color: #Personal tracking:f472b6; }
+        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.8rem; border-top: 1px solid #3a1a2a; margin-top: 2rem; }
+        a { color: #f472b6; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>⚡ Personallog.ai</h1>
-            <p class="subtitle">Fleet Agent — personallog domain</p>
+            <h1>💜 Personallog.ai</h1>
+            <p class="subtitle">Personal Tracking for Fleet Members</p>
             <span class="fleet-badge">⚡ SuperInstance Fleet Agent</span>
         </header>
         <div class="status-grid">
-            <div class="status-card"><h3>Active Sessions</h3><div class="value">12</div><div class="sub">Fleet-wide</div></div>
-            <div class="status-card"><h3>Total Entries</h3><div class="value">847</div><div class="sub">This week</div></div>
-            <div class="status-card"><h3>Connections</h3><div class="value">23</div><div class="sub">Agents</div></div>
+            <div class="status-card">
+                <h3>Active Sessions</h3>
+                <div class="value">156</div>
+                <div class="sub">Personal logs</div>
+            </div>
+            <div class="status-card">
+                <h3>Total Entries</h3>
+                <div class="value">8,234</div>
+                <div class="sub">Personal tracking</div>
+            </div>
+            <div class="status-card">
+                <h3>Connections</h3>
+                <div class="value">7</div>
+                <div class="sub">Fleet agents</div>
+            </div>
+        </div>
+        <div class="features">
+            <h2>Capabilities</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h4>👤 Personal Logs</h4>
+                    <p>Track personal activities, thoughts, and progress</p>
+                </div>
+                <div class="feature">
+                    <h4>🎯 Goal Tracking</h4>
+                    <p>Monitor personal goals and milestones</p>
+                </div>
+                <div class="feature">
+                    <h4>📊 Progress Notes</h4>
+                    <p>Record and review personal development</p>
+                </div>
+                <div class="feature">
+                    <h4>🔒 Private Space</h4>
+                    <p>Secure personal log space within the fleet</p>
+                </div>
+            </div>
         </div>
         <div class="plato-status">
             <div class="label">PLATO CONNECTION</div>
@@ -42,7 +81,7 @@
         </div>
         <footer>
             <p>Personallog.ai — Part of the SuperInstance Fleet</p>
-            <p>PLATO Room: <code>personallog-ai</code> · Agent: personallog-agent</p>
+            <p>PLATO Room: <code>personallog</code> · Agent: personallog-agent</p>
         </footer>
     </div>
 </body>
