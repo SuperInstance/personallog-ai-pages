@@ -1,0 +1,41 @@
+/* personallog.ai — soft dark, candlelight amber, quiet serif.
+ * A page you write in at night. */
+.le-root {
+  --le-bg: #161310;
+  --le-ink: #ece3d2;
+  --le-muted: #a89a80;
+  --le-accent: #e0a458;
+  --le-card: #1f1a14;
+  --le-line: #3a3126;
+  --le-go: #8fce8f;
+  --le-hold: #e0a458;
+  --le-nogo: #cf7a66;
+  --le-font: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --le-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+body { margin: 0; background: #161310; }
+
+.le-wordmark { font-weight: 600; }
+.le-tagline { font-style: italic; color: var(--le-muted); }
+.le-input { font-family: var(--le-font); }
+.le-btn { background: var(--le-accent); color: #1a140c; }
+.le-row, .le-verdict, .le-logitem { box-shadow: 0 1px 0 rgba(224, 164, 88, .06); }
+.le-verdict-value { font-family: var(--le-font); font-weight: 600; }
+
+/* tonight's read */
+.sk-read { background: var(--le-card); border: 1px solid var(--le-line);
+  border-radius: .8rem; padding: 1.2rem 1.3rem; position: relative; }
+.sk-flame { display: inline-block; width: .55rem; height: .55rem; border-radius: 50%;
+  background: radial-gradient(circle at 50% 35%, #ffe9b8 0%, #e0a458 55%, rgba(224,164,88,0) 75%);
+  margin-right: .5rem; vertical-align: baseline;
+  animation: sk-flicker 3.2s ease-in-out infinite; }
+@keyframes sk-flicker { 0%,100% { opacity: 1; transform: scale(1); }
+  30% { opacity: .75; transform: scale(.92); } 60% { opacity: .92; transform: scale(1.05); } }
+.sk-read-text { font-size: 1.22rem; font-style: italic; line-height: 1.5;
+  margin: .6rem 0 .4rem; color: var(--le-ink); }
+.sk-read-carry { font-size: .92rem; color: var(--le-muted); margin: 0; }
+.sk-read-carry strong { color: var(--le-accent); font-weight: 600; }
+.sk-read-private { margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--le-line);
+  font-size: .82rem; color: var(--le-muted); font-style: italic; }
+.sk-read-quiet { color: var(--le-muted); font-style: italic; }
+.le-banner { background: #0e0b08; }
